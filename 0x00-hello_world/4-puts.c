@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
- * main function puts a string
+/**
+ * main - function puts a string
+ * Return: 0
  */
 int main(void)
 {
