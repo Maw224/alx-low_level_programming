@@ -11,7 +11,7 @@ int main(void)
 			"and that piece of art is useful\" - Dora Korbar, 2015-10-19\n"
 		);
 
-	write(1,
+	write(2,
 		"and that piece of art is useful\" - Dora Korbar, 2015-10-19\n",
 		str_len
 		);
