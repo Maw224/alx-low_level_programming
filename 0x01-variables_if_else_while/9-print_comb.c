@@ -14,8 +14,11 @@ int main(void)
 	for (x = 0; x < 10; x++)
 	{
 		putchar('0' + x);
-		putchar(44);
-		putchar(32);
+		if (x < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
