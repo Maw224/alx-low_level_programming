@@ -7,21 +7,21 @@
 
 int main(void)
 {
-	int x, y;
+	int x, first, second;
 
-	for (x = 0; x < 10; x++)
+	x = 0;
+	while (x < 100)
 	{
-		for (y = 0; y < 10; y++)
+		first = x / 10;
+		second = x % 10;
+		if (first != second && first < second)
 		{
-			if (x != y && x < y)
+			putchar('0' + first);
+			putchar('0' + second);
+			if (x < 89)
 			{
-				putchar('0' + x);
-				putchar('0' + y);
-				if (x != 8  && y != 9)
-				{
-					putchar(44);
-					putchar(32);
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
