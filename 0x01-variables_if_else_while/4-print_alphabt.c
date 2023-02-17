@@ -11,11 +11,8 @@ int main(void)
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
-		if (x != 'e')
+		if (x != 'e' && x != 'q')
 			putchar(x);
-		if (x != 'q')
-			putchar(x);
-	}
 	printf("\n");
 	return (0);
 }
