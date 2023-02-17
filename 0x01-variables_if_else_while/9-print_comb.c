@@ -16,8 +16,8 @@ int main(void)
 		for (y = 0; y < 10; y++)
 		{
 			putchar('0' + x);
-			putchar('0' + y);
 			putchar(44);
+			putchar(32);
 		}
 	}
 	putchar('\n');
