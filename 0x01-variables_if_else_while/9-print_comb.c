@@ -15,9 +15,7 @@ int main(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			int combined = atoi(strcat(itoa(x), itoa(y)));
-
-			putchar('0' + combined);
+			putchar('0' + strcat(x, y));
 		}
 	}
 	putchar('\n');
