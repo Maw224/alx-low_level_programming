@@ -13,6 +13,7 @@ int main(void)
 	{
 		if (x != 'e' && x != 'q')
 			putchar(x);
+	}
 	printf("\n");
 	return (0);
 }
