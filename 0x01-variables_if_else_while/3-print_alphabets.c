@@ -8,16 +8,17 @@
 int main(void)
 {
 	char x = 'a';
+	char y = 'A';
 
 	while (x <= 'z')
 	{
 		putchar(x);
 		x++;
 	}
-	while (x <= 'z')
+	while (y <= 'Z')
 	{
-		putchar(toupper(x));
-		x++;
+		putchar(y);
+		y++;
 	}
 	printf("\n");
 	return (0);
