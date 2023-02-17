@@ -19,7 +19,7 @@ int main(void)
 		{
 			first_y = y / 10;
 			second_y = y % 10;
-			if (second_x < second_y && first_x <= first_y)
+			if (second_x < second_y || (first_x == first_y && second_x < second_y))
 			{
 				putchar('0' + first_x);
 				putchar('0' + second_x);
