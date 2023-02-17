@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			putchar('0' + strcat(x, y));
+			putchar('0' + strcat(itoa(x), itoa(y)));
 		}
 	}
 	putchar('\n');
