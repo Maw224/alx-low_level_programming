@@ -15,7 +15,7 @@ int main(void)
 			putchar('0' + x);
 		else
 			putchar('a' + x);
-		x++
+		x++;
 	}
 	putchar('\n');
 	return (0);
