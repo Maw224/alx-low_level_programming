@@ -7,9 +7,10 @@
 
 int main(void)
 {
-	int first_x, second_x, first_y, second_y;
-	int x, y = 0;
+	int first_x, second_x, first_y, second_y, x, y;
 
+	x = 0;
+	y = 0;
 	while (x < 100)
 	{
 		first_x = x / 10;
