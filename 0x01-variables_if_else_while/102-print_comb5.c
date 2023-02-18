@@ -17,7 +17,7 @@ int main(void)
 		{
 			first_y = y / 10;
 			second_y = y % 10;
-			if (first_x < first_y || (first_x == first_y && second_x < second_y))
+			/*if (first_x < first_y || (first_x == first_y && second_x < second_y))
 			{
 				putchar('0' + first_x);
 				putchar('0' + second_x);
@@ -29,7 +29,7 @@ int main(void)
 					putchar(44);
 					putchar(32);
 				}
-			}
+			}*/
 		}
 	}
 	putchar('\n');
