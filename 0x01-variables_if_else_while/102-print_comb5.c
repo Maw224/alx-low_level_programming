@@ -9,15 +9,15 @@ int main(void)
 {
 	int first_x, second_x, first_y, second_y, x, y;
 
-	for (x = 0; x < 100; x++)
+	for (x = 0; x < 10; x++)
 	{
 		first_x = x / 10;
 		second_x = x % 10;
-		for (y = 0; y < 100; y++)
+		for (y = 0; y < 10; y++)
 		{
 			first_y = y / 10;
 			second_y = y % 10;
-			/*if (first_x < first_y || (first_x == first_y && second_x < second_y))
+			if (first_x < first_y || (first_x == first_y && second_x < second_y))
 			{
 				putchar('0' + first_x);
 				putchar('0' + second_x);
@@ -29,12 +29,8 @@ int main(void)
 					putchar(44);
 					putchar(32);
 				}
-			}*/
-			putchar('0' + second_y);
-			putchar('0' + first_y);
+			} 
 		}
-		putchar('0' + first_x);
-		putchar('0' + second_x);
 	}
 	putchar('\n');
 	return (0);
