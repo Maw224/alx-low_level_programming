@@ -30,7 +30,11 @@ int main(void)
 					putchar(32);
 				}
 			}*/
+			putchar('0' + second_y);
+			putchar('0' + first_y);
 		}
+		putchar('0' + first_x);
+		putchar('0' + second_x);
 	}
 	putchar('\n');
 	return (0);
