@@ -9,13 +9,11 @@ int main(void)
 {
 	int first_x, second_x, first_y, second_y, x, y;
 
-	x = 0;
-	y = 0;
-	while (x < 100)
+	for (x = 0; x < 100; x++)
 	{
 		first_x = x / 10;
 		second_x = x % 10;
-		while (y < 100)
+		for (y = 0; y < 100; y++)
 		{
 			first_y = y / 10;
 			second_y = y % 10;
@@ -26,10 +24,13 @@ int main(void)
 				putchar(32);
 				putchar('0' + first_y);
 				putchar('0' + second_y);
+				if (x < 89)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
-			y++;
 		}
-		x++;
 	}
 	putchar('\n');
 	return (0);
