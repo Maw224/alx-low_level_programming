@@ -24,12 +24,12 @@ int main(void)
 				putchar(32);
 				putchar('0' + first_y);
 				putchar('0' + second_y);
-				if (!(first_x == 8 && second_x == 9))
+				if (!(first_x == 9 && second_x == 8))
 				{
 					putchar(44);
 					putchar(32);
 				}
-			} 
+			}
 		}
 	}
 	putchar('\n');
