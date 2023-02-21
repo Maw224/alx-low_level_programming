@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%d", current + previos);
+		printf("%lu", current + previos);
 		if (i < 50)
 			printf(", ");
 
