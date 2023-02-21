@@ -14,9 +14,17 @@ void times_table(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			_putchar('0' + x * y);
+			if ((x * y) < 10)
+				_putchar('0' + x * y);
+			else
+			{
+				_putchar('0' + x * y / 10);
+				_putchar('0' + x * y % 10);
+			}
 			_putchar(',');
 			_putchar(' ');
 		}
+		_putchar('$');
+		_putchar('\n');
 	}
 }
