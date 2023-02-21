@@ -26,7 +26,7 @@ void print_times_table(int n)
 					if (y != 0)
 						printf("   %d", x * y);
 					else
-						prntf("%d", x * y);
+						printf("%d", x * y);
 				}
 				if (y != n)
 					printf(",");
