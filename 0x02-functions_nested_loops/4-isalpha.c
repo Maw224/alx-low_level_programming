@@ -3,7 +3,7 @@
 /**
  * _isalpha - main block
  * @c: Ascii for char
- * return: 1 success, 0 otherwise
+ * Return: 1 success, 0 otherwise
  */
 
 int _isalpha(int c)
