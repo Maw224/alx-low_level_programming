@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	int current = 1;
-	int previos = 0;
+	long int current = 1;
+	long int previos = 0;
 	int save_current, i;
 
 	for (i = 1; i <= 50; i++)
