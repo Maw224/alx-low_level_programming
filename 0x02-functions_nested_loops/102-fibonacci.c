@@ -7,13 +7,14 @@
 
 int main(void)
 {
-	int i, current, previos = 1;
+	int i, curren = 1;
+	int previos = 0;
 	int save_current;
 
 	while (i <= 50)
 	{
-		if (i != 0)
-			printf(" %d", current + previos);
+		if (i != 1)
+			printf(", %d", current + previos);
 		else
 			printf("%d", current + previos);
 		i++;
