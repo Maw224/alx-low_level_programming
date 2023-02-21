@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long unsigned int current = 1, previos = 0, save_current, next;
+	long double current = 1, previos = 0, save_current, next;
 	int i = 0;
 
 	while (i < 98)
@@ -18,9 +18,9 @@ int main(void)
 		previos = save_current;
 
 		if (i < 97)
-			printf("%lu, ", next);
+			printf("%.0Lf, ", next);
 		else
-			printf("%lu\n", next);
+			printf("%.0Lf\n", next);
 		i++;
 	}
 	return (0);
