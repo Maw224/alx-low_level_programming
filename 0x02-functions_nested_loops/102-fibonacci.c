@@ -7,8 +7,7 @@
 
 int main(void)
 {
-	long int current = 1;
-	long int previos = 0;
+	long int current = 1, previos = 0;
 	long int next, save_current;
 	int i;
 
@@ -23,5 +22,6 @@ int main(void)
 		if (i < 50)
 			printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
