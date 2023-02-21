@@ -15,14 +15,17 @@ void print_times_table(int n)
 
 		for (x = 0; x <= n; x++)
 		{
-			if (x * y >= 100)
-				printf(" %d", x * y);
-			else if (x * y >= 10)
-				printf("  %d", x * y);
-			else
-				printf("   %d", x * y);
-			if (y != n)
-				printf(",");
+			for (y = 0; y <= n; y++)
+			{
+				if (x * y >= 100)
+					printf(" %d", x * y);
+				else if (x * y >= 10)
+					printf("  %d", x * y);
+				else
+					printf("   %d", x * y);
+				if (y != n)
+					printf(",");
+			}
 		}
 	}
 }
