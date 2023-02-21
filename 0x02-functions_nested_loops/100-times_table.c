@@ -22,7 +22,12 @@ void print_times_table(int n)
 				else if (x * y >= 10)
 					printf("  %d", x * y);
 				else
-					printf("   %d", x * y);
+				{
+					if (y != 0)
+						printf("   %d", x * y);
+					else
+						prntf("%d", x * y);
+				}
 				if (y != n)
 					printf(",");
 			}
