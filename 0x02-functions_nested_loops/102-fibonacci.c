@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i, curren = 1;
+	int i, current = 1;
 	int previos = 0;
 	int save_current;
 
