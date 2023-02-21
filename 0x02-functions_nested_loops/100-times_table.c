@@ -26,6 +26,7 @@ void print_times_table(int n)
 				if (y != n)
 					printf(",");
 			}
+			printf("\n");
 		}
 	}
 }
