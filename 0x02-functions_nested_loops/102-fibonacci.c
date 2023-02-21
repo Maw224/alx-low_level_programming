@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	int i, current = 1;
+	int current = 1;
 	int previos = 0;
-	int save_current;
+	int save_current, i;
 
-	while (i <= 50)
+	for (i = 1; i <= 50; i++)
 	{
 		printf("%d", current + previos);
 		if (i < 50)
@@ -20,7 +20,6 @@ int main(void)
 		save_current = current;
 		current += previos;
 		previos = save_current;
-		i++;
 	}
 	printf("\n");
 	return (0);
