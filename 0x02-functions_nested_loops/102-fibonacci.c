@@ -13,14 +13,14 @@ int main(void)
 
 	while (i <= 50)
 	{
-		if (i != 1)
-			printf(", %d", current + previos);
-		else
-			printf("%d", current + previos);
-		i++;
+		printf("%d", current + previos);
+		if (i < 50)
+			printf(", ");
+
 		save_current = current;
 		current += previos;
 		previos = save_current;
+		i++;
 	}
 	printf("\n");
 	return (0);
