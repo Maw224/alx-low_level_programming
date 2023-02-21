@@ -36,7 +36,7 @@ int main(void)
 			save_current = current;
 			current += previos;
 			previos = save_current;
-			printf("%lu", current + previos);
+			printf("%lu", next);
 		}
 
 		if (i < 97)
