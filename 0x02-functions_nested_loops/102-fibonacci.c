@@ -9,7 +9,8 @@ int main(void)
 {
 	long int current = 1;
 	long int previos = 0;
-	int save_current, i, next;
+	int save_current, i;
+	long int next;
 
 	for (i = 1; i <= 50; i++)
 	{
