@@ -21,6 +21,6 @@ int main(void)
 		if (next % 2 == 0)
 			result += next;
 	}
-	printf("%d\n", result);
+	printf("%lu\n", result);
 	return (0);
 }
