@@ -18,9 +18,9 @@ int main(void)
 		previos = save_current;
 
 		if (i < 97)
-			printf("%d, ", next);
+			printf("%lu, ", next);
 		else
-			printf("%d\n", next);
+			printf("%lu\n", next);
 		i++;
 	}
 	return (0);
