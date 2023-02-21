@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int current = 1, previos = 0;
-	long int next, save_current, result;
+	long int next = 0, save_current, result;
 
 	result = 0;
 	while (next <= 4000000)
