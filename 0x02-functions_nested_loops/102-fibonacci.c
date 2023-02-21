@@ -21,6 +21,5 @@ int main(void)
 		current += previos;
 		previos = save_current;
 	}
-	printf("\n");
 	return (0);
 }
