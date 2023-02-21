@@ -24,7 +24,7 @@ void times_table(void)
 			if (y < 9)
 			{
 				_putchar(',');
-				if (x * y < 10)
+				if ((x * y) < 10)
 				{
 					_putchar(' ');
 					_putchar(' ');
@@ -33,7 +33,6 @@ void times_table(void)
 					_putchar(' ');
 			}
 		}
-		_putchar('$');
 		_putchar('\n');
 	}
 }
