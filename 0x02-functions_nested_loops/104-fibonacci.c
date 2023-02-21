@@ -18,7 +18,7 @@ int main(void)
 		previos = save_current;
 
 		if (i < 97)
-			printf("%lu, ", next);
+			//printf("%lu, ", next);
 		else
 			printf("%lu\n", next);
 		i++;
