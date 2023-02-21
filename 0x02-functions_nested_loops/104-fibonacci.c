@@ -16,7 +16,7 @@ int main(void)
 	{
 		if ((current + previos) > MAX || fr1 > 0 || fr2 > 0)
 		{
-			if(fr1 > 0 || fr2 > 0)
+			if (fr1 > 0 || fr2 > 0)
 			{
 				save_current = fr1;
 				fr1 = ((save_current * 10) + fr2) / MAX;
