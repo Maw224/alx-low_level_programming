@@ -4,11 +4,10 @@
 /**
  * _abs - main block
  * @n: number
- * Return: 0
+ * Return: absolute value of @n
  */
 
 int _abs(int n)
 {
-	abs(n);
-	return (0);
+	return (abs(n));
 }
