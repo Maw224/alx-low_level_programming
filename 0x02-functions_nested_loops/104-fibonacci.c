@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	unsigned long int current = 1, previos = 0, save_current, next, fr1, fr2;
+	unsigned long int current = 1, previos = 0, save_current, fr1, fr2;
 	int i = 0;
 
 	while (i < 98)
