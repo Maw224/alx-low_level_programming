@@ -9,17 +9,18 @@ int main(void)
 {
 	long int current = 1;
 	long int previos = 0;
-	int save_current, i;
+	int save_current, i, next;
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%lu", current + previos);
-		if (i < 50)
-			printf(", ");
-
+		next = current + previos;
 		save_current = current;
 		current += previos;
 		previos = save_current;
+
+		printf("%lu", next);
+		if (i < 50)
+			printf(", ");
 	}
 	return (0);
 }
