@@ -17,7 +17,7 @@ int main(void)
 		save_current = current;
 		current += previos;
 		previos = save_current;
-		
+
 		if (next % 2 == 0)
 			result += next;
 	}
