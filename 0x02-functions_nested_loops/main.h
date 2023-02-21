@@ -4,7 +4,7 @@
  * _putchar - prints a characther
  */
 
-int _putchar(int x)
+void _putchar(int x)
 {
 	putchar('0' + x);
 }
