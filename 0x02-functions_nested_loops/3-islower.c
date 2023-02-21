@@ -2,6 +2,7 @@
 
 /**
  * _islower - main block
+ * c: ascii for character
  * Return: 1 is lower, 0 otherwise
  */
 
