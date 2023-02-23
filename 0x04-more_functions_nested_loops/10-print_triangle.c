@@ -17,10 +17,10 @@ void print_triangle(int n)
 		for (j = n - i; j > 1; j--)
 		{
 			_putchar(' ');
-			for (k = 0; k <= i; k++)
-			{
-				_putchar('#');
-			}
+		}
+		for (k = 0; k <= i; k++)
+		{
+			_putchar('#');
 		}
 		_putchar('\n');
 	}
