@@ -2,6 +2,7 @@
 
 /**
  * more_numbers - main block
+ * Return: void
  */
 
 void more_numbers(void)
