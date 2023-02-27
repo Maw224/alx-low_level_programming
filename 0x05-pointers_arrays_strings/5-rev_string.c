@@ -8,7 +8,8 @@
 
 void rev_string(char *s)
 {
-	unsigned int j = strlen(s), i;
+	unsigned int i;
+	const int j = strlen(s);
 	char rev[j];
 
 	for (i = j; i > 0; i--)
