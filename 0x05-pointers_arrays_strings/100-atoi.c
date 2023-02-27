@@ -9,7 +9,15 @@
 
 int _atoi(char *c)
 {
-	int i = atoi(c);
+	char *ch2;
 
+	if (c[0] == "-" || c[0] == "+" || c[0] == " ")
+	{
+		printf("not regular");
+	}
+	else
+	{
+		int i = atoi(c);
+	}
 	return (i);
 }
