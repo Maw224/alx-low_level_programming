@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	for (i = strlen(s); i > 0; i--)
 	{
-		strcat(rev, &s[i - 1], 1);
+		strncat(rev, &s[i - 1], 1);
 	}
 	s = rev;
 }
