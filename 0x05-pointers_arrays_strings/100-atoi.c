@@ -29,7 +29,7 @@ int _atoi(char *c)
 			ch2[0] = '-';
 
 		j = 1;
-		printf("%s", ch2);
+		printf("%s - and j %d", ch2, j);
 		value = atoi(ch2);
 	}
 	else
