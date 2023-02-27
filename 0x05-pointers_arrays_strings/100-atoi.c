@@ -52,7 +52,7 @@ int _atoi(char *c)
 
 int stoi_max(char *c, int max, int sign)
 {
-	int sub_value = 0;
+	int sub_value = 0, i;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
