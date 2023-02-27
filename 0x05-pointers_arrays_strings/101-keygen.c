@@ -17,11 +17,11 @@ int main(void)
 	 * char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
 	 * char symbols[] = "!@#$^&*?";
 	 */
-	char password[20];
+	char password[15];
 
 	srand((unsigned int)(time(NULL)));
 
-	for (i = 0; i < 20; i++)
+	for (i = 0; i < 15; i++)
 	{
 		/**
 		 * if (random == 1)
