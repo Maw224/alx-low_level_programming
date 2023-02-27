@@ -15,7 +15,7 @@ int main(void)
 	char letters[] = "qwertyuiopasdfhjklzxcvbnm";
 	char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
 	char symbols[] = "!@#$^&*?";
-	char password[8];
+	char password[10];
 
 	srand((unsigned int)(time(NULL)));
 
