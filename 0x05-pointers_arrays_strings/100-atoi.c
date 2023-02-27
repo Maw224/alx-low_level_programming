@@ -13,7 +13,7 @@ int _atoi(char *c)
 {
 	char *ch2 = "";
 	int j, num_count = 0, sign_count = 0, value;
-	unsigned int i, len;
+	unsigned int len;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
