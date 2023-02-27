@@ -46,6 +46,8 @@ int _atoi(char *c)
 					break;
 			}
 		}
+		if (sign % 2 != 0)
+			sub_value *= -1;
 
 		printf("req len: %d, signs: %d, nums: %d, sub_value: %d, max: %d, "
 				, len, sign, nums, sub_value, max);
