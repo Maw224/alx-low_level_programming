@@ -36,7 +36,7 @@ int _atoi(char *c)
 			}
 		}
 
-		for (i = 0; i < len; i++)
+		for (i = 0; c[i] != '\0'; i++)
 		{
 			if (c[i] >= '0' && c[i] <= '9')
 			{
