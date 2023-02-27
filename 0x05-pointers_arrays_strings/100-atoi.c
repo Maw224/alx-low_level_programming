@@ -40,13 +40,15 @@ int _atoi(char *c)
 	return (value);
 }
 
+
 /**
  * stoi_max - secondary block
  * @c: string
- * @max: integer
- * @sign: integer
- * Return: signed integer value from string
+ * @max: max integer
+ * @sign: sign integer
+ * Return: signed integer value
  */
+
 
 int stoi_max(char *c, int max, int sign)
 {
