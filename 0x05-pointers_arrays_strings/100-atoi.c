@@ -9,9 +9,9 @@
 
 int _atoi(char *c)
 {
-	char *ch2;
+	/* char *ch2; */
 
-	if (c[0] == "-" || c[0] == "+" || c[0] == " ")
+	if (c[0] == '-' || c[0] == '+' || c[0] == ' ')
 	{
 		printf("not regular");
 	}
