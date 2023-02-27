@@ -20,14 +20,6 @@ int _atoi(char *c)
 	{
 		len = strlen(c);
 		printf("%d", len);
-		for (i = 0; i < len; i++)
-		{
-			if ((c[i] >= '0' && c[i] <= '9')
-					&& (c[i + 1] >= '0' && c[i + 1] <= '9'))
-				num_count++;
-			if (c[i] == '-')
-				sign_count++;
-		}
 		printf("%d%d", sign_count, num_count);
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
