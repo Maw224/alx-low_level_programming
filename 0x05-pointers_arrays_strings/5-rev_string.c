@@ -8,13 +8,18 @@
 
 void rev_string(char *s)
 {
-	unsigned int i;
-	const int j = strlen(s);
-	char rev[j];
+	int i, j, k;
+	char c;
 
-	for (i = j; i > 0; i--)
+	for (i = 0; s[i] != '\0', i++)
+		;
+
+	k = i;
+
+	for (i--, j = 0; j < k / 2; i--, j++)
 	{
-		strncat(rev, &s[i - 1], 1);
+		c = s[j];
+		s[j] = s[i];
+		s[i] = c;
 	}
-	s = rev;
 }
