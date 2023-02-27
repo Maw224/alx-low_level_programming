@@ -24,6 +24,7 @@ int _atoi(char *c)
 			if (c[i] == '-')
 				sign_count++;
 		}
+		printf("%d%d", sign_count, num_count);
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
 		for (i = 0, j = 1; c[i] != '\0'; i++)
