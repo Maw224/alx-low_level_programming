@@ -11,6 +11,7 @@
 int _atoi(char *c)
 {
 	/* char *ch2; */
+	int i;
 
 	if (c[0] == '-' || c[0] == '+' || c[0] == ' ')
 	{
@@ -18,7 +19,7 @@ int _atoi(char *c)
 	}
 	else
 	{
-		int i = atoi(c);
+		i = atoi(c);
 	}
 	return (i);
 }
