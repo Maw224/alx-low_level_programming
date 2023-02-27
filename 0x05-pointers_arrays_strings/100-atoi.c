@@ -16,9 +16,7 @@ int _atoi(char *c)
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		int i, len = 0, sign = 0, nums = 0;
-		int sub_value = 0;
-		int max = 1;
+		int i, max = 1, sign = 0, nums = 0;
 
 		for (i = 0; c[i] != '\0'; i++)
 		{
@@ -29,10 +27,7 @@ int _atoi(char *c)
 				nums++;
 				max *= 10;
 				if (c[i + 1] < '0' || c[i + 1] > '9')
-				{
-					len = i;
 					break;
-				}
 			}
 		}
 

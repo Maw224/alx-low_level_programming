@@ -10,7 +10,7 @@
 
 int stoi_max(char *c, int max, int sign)
 {
-	int sub_value;
+	int sub_value = 0;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
