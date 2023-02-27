@@ -23,18 +23,15 @@ int _atoi(char *c)
 		for (i = 0; c[i] != '\0'; i++)
 		{
 			if (c[i] == '-')
-			{
-				len += 1;
 				sign += 1;
-			}
 			if (c[len] >= '0' && c[len] <= '9')
 			{
-				len += 1;
 				nums++;
 				max *= 10;
 				if (c[len + 1] < '0' || c[len + 1] > '9')
 					break;
 			}
+			len++;
 		}
 
 
