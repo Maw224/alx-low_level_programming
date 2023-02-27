@@ -8,5 +8,5 @@
 
 void _puts(char *str)
 {
-	write(stdout, str);
+	write(2, str);
 }
