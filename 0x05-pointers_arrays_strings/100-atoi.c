@@ -27,7 +27,7 @@ int _atoi(char *c)
 			if (c[len] >= '0' && c[len] <= '9')
 			{
 				nums++;
-				max *= nums;
+				max *= 10;
 			}
 		}
 
