@@ -21,7 +21,7 @@ int _atoi(char *c)
 		for (len = 0; c[len] != '\0'; len++)
 			;
 
-		printf("not normal, lenght: %d", len);
+		printf("not normal, lenght: -%d-", len);
 		value = 2;
 	}
 	else
