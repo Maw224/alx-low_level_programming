@@ -28,6 +28,7 @@ int _atoi(char *c)
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
 
+		j = 1;
 		printf("%s", ch2);
 		value = atoi(ch2);
 	}
