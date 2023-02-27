@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * _atoi - main block
@@ -11,12 +12,13 @@
 int _atoi(char *c)
 {
 	char *ch2 = "";
-	int i, j, num_count = 0, sign_count = 0, value;
+	int j, num_count = 0, sign_count = 0, value;
+	unsigned int i;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		for (i = 0; c[i] != '\0'; i++)
+		for (i = 0; i < strlen(c); i++)
 		{
 			if ((c[i] >= '0' && c[i] <= '9')
 					&& (c[i + 1] >= '0' && c[i + 1] <= '9'))
