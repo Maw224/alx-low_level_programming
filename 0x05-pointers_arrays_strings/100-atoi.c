@@ -25,7 +25,7 @@ int _atoi(char *c)
 				sign += 1;
 			if (c[len] >= '0' && c[len] <= '9')
 			{
-				sub_value += (c[len] + '0') * 10
+				sub_value += (c[len] + '0') * 10;
 				nums++;
 			}
 		}
