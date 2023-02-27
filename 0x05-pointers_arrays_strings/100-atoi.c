@@ -36,6 +36,16 @@ int _atoi(char *c)
 			}
 		}
 
+		for (i = 0; i < len; i++)
+		{
+			if (c[i] >= '0' && c[i] <= '9')
+			{
+				sub_value += c[i] * max;
+				max /= 10;
+				if (c[i + 1] < '0' || c[i + 1] > '9')
+					break;
+			}
+		}
 
 		printf("req len: %d, signs: %d, nums: %d, sub_value: %d, max: %d, "
 				, len, sign, nums, sub_value, max);
