@@ -13,14 +13,20 @@ int _atoi(char *c)
 {
 	char *ch2 = "";
 	int j, num_count = 0, sign_count = 0, value;
-	unsigned int len;
+	int len, i;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
 		len = strlen(c);
-		printf("%d", len);
-		printf("%d%d", sign_count, num_count);
+		printf("Length:%d\n", len);
+
+		for(i = 0; i < len; i++)
+		{
+			if (c[i] == '-')
+			{
+				sign_count += 1;
+			}
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
 
