@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - main block
- * @*n: poiner to integer value
+ * @n: poiner to integer value
  */
 
 void reset_to_98(int *n)
