@@ -17,8 +17,7 @@ int _atoi(char *c)
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
 		int len, sign = 0, nums = 0, j = 1;
-		char *ch1 = "";
-		char *ch2 = "";
+		int sub_value = 0;
 
 		for (len = 0; c[len] != '\0'; len++)
 		{
@@ -26,13 +25,13 @@ int _atoi(char *c)
 				sign += 1;
 			if (c[len] >= '0' && c[len] <= '9')
 			{
-				ch2[j] = c[len];
-				j++;
+				sub_value += (c[len] + '0') * 10
+				nums++;
 			}
 		}
 
-		printf("not normal, - signs: -%d- , nums = %d, ch1: %s, ch2: %s, "
-				, sign, nums, ch1, ch2);
+		printf("not normal, - signs: -%d- , nums = %d, sub_value: %d, "
+				, sign, nums, sub_value);
 		value = 2;
 	}
 	else
