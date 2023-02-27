@@ -17,11 +17,11 @@ int main(void)
 	 * char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
 	 * char symbols[] = "!@#$^&*?";
 	 */
-	char password[10];
+	char password[20];
 
 	srand((unsigned int)(time(NULL)));
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 20; i++)
 	{
 		/**
 		 * if (random == 1)
@@ -50,7 +50,7 @@ int main(void)
 		 *	printf("%c", password[i]);
 		 * }
 		 */
-		password[i] = (rand() % 125) + 1;
+		password[i] = (rand() % 94) + 32;
 		printf("%c", password[i]);
 	}
 	printf("%s", password);
