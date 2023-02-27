@@ -59,7 +59,7 @@ int stoi_max(char *c, int max, int sign)
 		if (c[i] >= '0' && c[i] <= '9')
 		{
 			max /= 10;
-			sub_value += (c[i] - '0')* max;
+			sub_value += (c[i] - '0') * max;
 			if (c[i + 1] < '0' || c[i + 1] > '9')
 				break;
 		}
