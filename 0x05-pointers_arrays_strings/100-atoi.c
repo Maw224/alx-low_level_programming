@@ -27,6 +27,7 @@ int _atoi(char *c)
 			{
 				sign_count += 1;
 			}
+		}
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
 
