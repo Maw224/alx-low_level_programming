@@ -18,7 +18,7 @@ int _atoi(char *c)
 	{
 		int len, sign = 0, nums = 0;
 		int sub_value = 0;
-		int max = 10;
+		int max = 1;
 
 		for (len = 0; c[len] != '\0'; len++)
 		{
