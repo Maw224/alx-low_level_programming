@@ -11,9 +11,7 @@
 int main(void)
 {
 	int i, random;
-
 	srand((unsigned int)(time(NULL)));
-
 	char numbers[] = "0123456789";
 	char letters[] = "qwertyuiopasdfhjklzxcvbnm";
 	char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
