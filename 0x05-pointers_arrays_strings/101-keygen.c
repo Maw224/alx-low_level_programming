@@ -17,8 +17,8 @@ int main(void)
 	char numbers[] = "0123456789";
 	char letters[] = "qwertyuiopasdfhjklzxcvbnm";
 	char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
-	char symbols = "!@#$^&*?";
-	char pasword[8];
+	char symbols[] = "!@#$^&*?";
+	char password[8];
 
 	random = rand() % 4;
 
