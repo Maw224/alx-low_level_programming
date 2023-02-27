@@ -27,25 +27,25 @@ int main(void)
 		if (random == 1)
 		{
 			password[i] = numbers[rand() % 10];
-			random = rand % 4;
+			random = rand() % 4;
 			printf("%c", password[i]);
 		}
 		if (random == 2)
 		{
 			password[i] = letters[rand() % 26];
-			random = rand % 4;
+			random = rand() % 4;
 			printf("%c", password[i]);
 		}
 		if (random == 3)
 			{
 			password[i] = LETTERS[rand() % 26];
-			random = rand % 4;
+			random = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else
 		{
 			password[i] = symbols[rand() % 8];
-			random = rand % 4;
+			random = rand() % 4;
 			printf("%c", password[i]);
 		}
 	}
