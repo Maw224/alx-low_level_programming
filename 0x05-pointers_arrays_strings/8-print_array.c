@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - main block
- * @a: array
+ * @arr: array
  * @n: number
  */
 
@@ -11,6 +12,10 @@ void print_array(int *arr, int n)
 	int i;
 
 	for (i = 0; i < n; i++)
-		_putchar(arr[i]);
+	{
+		printf("%d", arr[i]);
+		if (i < n - 1)
+			printf(", ");
+	}
 	_putchar('\n');
 }
