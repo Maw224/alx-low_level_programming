@@ -36,22 +36,7 @@ int _atoi(char *c)
 			}
 		}
 
-		for (i = 0; c[i] != '\0'; i++)
-		{
-			if (c[i] >= '0' && c[i] <= '9')
-			{
-				max /= 10;
-				sub_value += (c[i] - '0')* max;
-				if (c[i + 1] < '0' || c[i + 1] > '9')
-					break;
-			}
-		}
-		if (sign % 2 != 0)
-			sub_value *= -1;
-
-		printf("req len: %d, signs: %d, nums: %d, sub_value: %d, max: %d, "
-				, len, sign, nums, sub_value, max);
-		value = sub_value;
+		value = stoi_max(c, max, sign);
 	}
 	else
 	{
