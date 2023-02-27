@@ -15,8 +15,7 @@ int _atoi(char *c)
 	int j, num_count = 0, sign_count = 0, value;
 	int len, i;
 
-	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
-			&& !(c[1] >= '0' && c[1] <= '9'))
+	if (c[0] == '-' || c[0] == '+' || c[0] == ' ')
 	{
 		len = strlen(c);
 		printf("Length:%d\n", len);
