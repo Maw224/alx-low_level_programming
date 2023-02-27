@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _puts - main block
@@ -8,5 +9,5 @@
 
 void _puts(char *str)
 {
-	write(2, str);
+	write(1, str, strlen(str));
 }
