@@ -24,7 +24,7 @@ int _atoi(char *c)
 				sign += 1;
 		}
 
-		printf("not normal, - signs: -%d- ", len);
+		printf("not normal, - signs: -%d- ", sign);
 		value = 2;
 	}
 	else
