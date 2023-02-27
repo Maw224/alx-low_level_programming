@@ -31,7 +31,8 @@ int _atoi(char *c)
 			}
 		}
 
-		printf("not normal, - signs: -%d- , nums = %d, ch1: %s, ch2: %s, ", sign, nums, ch1, ch2);
+		printf("not normal, - signs: -%d- , nums = %d, ch1: %s, ch2: %s, "
+				, sign, nums, ch1, ch2);
 		value = 2;
 	}
 	else
