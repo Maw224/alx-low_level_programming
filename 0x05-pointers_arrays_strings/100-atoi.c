@@ -27,15 +27,7 @@ int _atoi(char *c)
 		printf("%d%d", sign_count, num_count);
 		if (sign_count % 2 != 0)
 			ch2[0] = '-';
-		for (i = 0, j = 1; c[i] != '\0'; i++)
-		{
-			if ((c[i] >= '0' && c[i] <= '9')
-					&& (c[i + 1] >= '0' && c[i + 1] <= '9'))
-			{
-				ch2[j] = c[i];
-				j++;
-			}
-		}
+
 		printf("%s", ch2);
 		value = atoi(ch2);
 	}
