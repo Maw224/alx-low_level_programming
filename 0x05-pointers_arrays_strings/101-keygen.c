@@ -11,11 +11,13 @@
 int main(void)
 {
 	int i, random;
-	char numbers[] = "0123456789";
-	char letters[] = "qwertyuiopasdfhjklzxcvbnm";
-	char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
-	char symbols[] = "!@#$^&*?";
-	char password[];
+	/**
+	 * char numbers[] = "0123456789";
+	 * char letters[] = "qwertyuiopasdfhjklzxcvbnm";
+	 * char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
+	 * char symbols[] = "!@#$^&*?";
+	 */
+	char password[10];
 
 	srand((unsigned int)(time(NULL)));
 
