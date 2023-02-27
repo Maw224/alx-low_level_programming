@@ -21,7 +21,7 @@ int _atoi(char *c)
 		len = strlen(c);
 		printf("%d", len);
 		printf("%d%d", sign_count, num_count);
-		if (sign_count % 2 == 0)
+		if (sign_count % 2 != 0)
 			ch2[0] = '-';
 
 		j = 1;
