@@ -19,7 +19,7 @@ int _atoi(char *c)
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		printf("not normal, lenght: %u", strlen(c));
+		printf("not normal, lenght: %d", strlen(c));
 		value = 2;
 	}
 	else
