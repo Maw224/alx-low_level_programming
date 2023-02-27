@@ -13,12 +13,14 @@ int _atoi(char *c)
 {
 	char *ch2 = "";
 	int j, num_count = 0, sign_count = 0, value;
-	unsigned int i;
+	unsigned int i, len;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		for (i = 0; i < strlen(c); i++)
+		len = strlen(c);
+		printf("%d", len);
+		for (i = 0; i < len; i++)
 		{
 			if ((c[i] >= '0' && c[i] <= '9')
 					&& (c[i + 1] >= '0' && c[i + 1] <= '9'))
