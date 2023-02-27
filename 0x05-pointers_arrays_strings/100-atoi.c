@@ -24,11 +24,11 @@ int _atoi(char *c)
 		{
 			if (c[i] == '-')
 				sign += 1;
-			if (c[len] >= '0' && c[len] <= '9')
+			if (c[i] >= '0' && c[i] <= '9')
 			{
 				nums++;
 				max *= 10;
-				if (c[len + 1] < '0' || c[len + 1] > '9')
+				if (c[i + 1] < '0' || c[i + 1] > '9')
 					break;
 			}
 			len++;
