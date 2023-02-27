@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int i;
+	int i, random;
 	char numbers[] = "0123456789";
 	char letters[] = "qwertyuiopasdfhjklzxcvbnm";
 	char LETTERS[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
@@ -18,6 +18,7 @@ int main(void)
 	char password[15];
 
 	srand((unsigned int)(time(NULL)));
+	random = rand() % 4;
 
 	for (i = 0; i < 15; i++)
 	{
