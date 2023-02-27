@@ -15,24 +15,16 @@ int _atoi(char *c)
 	int j, num_count = 0, sign_count = 0, value;
 	int len, i;
 
-	if (c[0] == '-' || c[0] == '+' || c[0] == ' ')
+	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
+			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
 		len = strlen(c);
 		printf("Length:%d\n", len);
-
-		for(i = 0; i < len; i++)
-		{
-			if (c[i] == '-')
-			{
-				sign_count += 1;
-			}
-		}
-
-		printf("%d%d\n",sign_count, num_count);
-		ch2[0] = '-';
+		ch2[0] = 'm';
+		i = 0;
 		j = 1;
-		printf("%s - and j %d", ch2, j);
-		value = atoi(ch2);
+		value = 2;
+		printf("i: %d, j: %d, num: %d, sign: %d, ch2: %s",i, j, num_count, sign_count, ch2);
 	}
 	else
 	{
