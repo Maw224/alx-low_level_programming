@@ -16,7 +16,7 @@ int _atoi(char *c)
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		int len, sign = 0, nums = 0, j = 1;
+		int len, sign = 0, nums = 0;
 		int sub_value = 0;
 
 		for (len = 0; c[len] != '\0'; len++)
