@@ -8,12 +8,12 @@
 
 void rev_string(char *s)
 {
-	unsigned int i, j, k;
+	unsigned int i;
+	char rev[];
 
-	for (i = strlen(s), j = 0; i > 0, j < i / 2; i--, j++)
+	for (i = strlen(s); i > 0; i--)
 	{
-		k = s[j];
-		s[j] = s[i - 1];
-		s[i] = k;
+		strcat(rev, s[i - 1]);
 	}
+	s = rev;
 }
