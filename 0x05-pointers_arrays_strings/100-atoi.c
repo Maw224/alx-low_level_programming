@@ -51,7 +51,7 @@ int _atoi(char *c)
 
 		printf("req len: %d, signs: %d, nums: %d, sub_value: %d, max: %d, "
 				, len, sign, nums, sub_value, max);
-		value = 2;
+		value = sub_value;
 	}
 	else
 	{
