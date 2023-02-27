@@ -10,17 +10,36 @@
 
 int _atoi(char *c)
 {
-	/* char *ch2; */
-	int i;
+	char *ch2;
+	int i, j, num_count = 0, sign_count = 0, value;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ') && !(c[1] >= '0' && c[1] <= '9'))
 	{
-		printf("not regular");
-		i = 0;
+		for (i = 0; c[i] != '\0'; i++)
+		{
+			if ((c[i] >= '0' && c[i] <= '9') && (c[i + 1] >= '0' && c[i + 1] <= '9'))
+				num_count++;
+			if (c[i] == '-')
+				sign_count++;
+		}
+		if (sign_count % 2 != 0)
+			ch2[0] = '-';
+		for (i = 0, j = 1; c[i] != '\0'; i++)
+		{
+			if ((c[i] >= '0' && c[i] <= '9') && (c[i + 1] >= '0' && c[i + 1] <= '9'))
+			{
+				ch2[j] = c[i];
+				j++;
+			}
+			else
+				break;
+		}
+
+		value = atoi(ch2);
 	}
 	else
 	{
-		i = atoi(c);
+		value = atoi(c);
 	}
-	return (i);
+	return (value);
 }
