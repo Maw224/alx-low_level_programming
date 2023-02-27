@@ -16,15 +16,17 @@ int _atoi(char *c)
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		int len, sign = 0;
+		int len, sign = 0, nums = 0;
 
 		for (len = 0; c[len] != '\0'; len++)
 		{
-			if(c[len] == '-')
+			if (c[len] == '-')
 				sign += 1;
+			if (c[len] >= '0' && c[len] <= '9')
+				nums += 1;
 		}
 
-		printf("not normal, - signs: -%d- ", sign);
+		printf("not normal, - signs: -%d- , nums = %d", sign, nums);
 		value = 2;
 	}
 	else
