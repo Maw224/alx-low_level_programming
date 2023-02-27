@@ -16,6 +16,7 @@ int _atoi(char *c)
 	if (c[0] == '-' || c[0] == '+' || c[0] == ' ')
 	{
 		printf("not regular");
+		i = 0;
 	}
 	else
 	{
