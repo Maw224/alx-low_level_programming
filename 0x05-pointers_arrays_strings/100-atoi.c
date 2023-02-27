@@ -35,7 +35,7 @@ int _atoi(char *c)
 				j++;
 			}
 		}
-		printf(ch2);
+		printf("%s", ch2);
 		value = atoi(ch2);
 	}
 	else
