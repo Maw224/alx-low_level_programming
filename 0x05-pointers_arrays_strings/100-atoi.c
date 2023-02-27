@@ -16,7 +16,10 @@ int _atoi(char *c)
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		unsigned int len = strlen(c);
+		int len;
+
+		for (len = 0; c[len] != '\0'; len++)
+			;
 
 		printf("not normal, lenght: %d", len);
 		value = 2;
