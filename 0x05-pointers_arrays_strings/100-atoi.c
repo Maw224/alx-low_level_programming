@@ -29,9 +29,11 @@ int _atoi(char *c)
 				nums++;
 				max *= 10;
 				if (c[i + 1] < '0' || c[i + 1] > '9')
+				{
+					len = i;
 					break;
+				}
 			}
-			len++;
 		}
 
 
