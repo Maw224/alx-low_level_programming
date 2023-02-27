@@ -11,15 +11,13 @@
 
 int _atoi(char *c)
 {
-	/*char *ch2 = "";*/
-	/*int j, num_count = 0, sign_count = 0, value;*/
-	/*int len, i;*/
 	int value;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
 			&& !(c[1] >= '0' && c[1] <= '9'))
 	{
-		printf("not normal, lenght: %d", strlen(c));
+		int len = strlen(c);
+		printf("not normal, lenght: %d", len);
 		value = 2;
 	}
 	else
