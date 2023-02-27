@@ -10,7 +10,7 @@
 
 int _atoi(char *c)
 {
-	char *ch2;
+	char *ch2 = "";
 	int i, j, num_count = 0, sign_count = 0, value;
 
 	if ((c[0] == '-' || c[0] == '+' || c[0] == ' ')
