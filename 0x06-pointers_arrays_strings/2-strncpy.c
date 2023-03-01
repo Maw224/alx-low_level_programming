@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strncpy - main block
@@ -10,15 +11,5 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-
-	for (i = 0; src[i] != '\0' && n > 0; i++, n--)
-	{
-		dest[i] = src[i];
-	}
-
-	if (n > 0)
-		dest[i + 1] = '\0';
-
-	return (dest);
+	return (strncpy(dest, src, n));
 }
