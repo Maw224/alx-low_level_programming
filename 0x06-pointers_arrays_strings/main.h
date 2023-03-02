@@ -7,4 +7,4 @@ void reverse_array(int *arr, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
-int search(int, char *);
+int search(char, char *);
