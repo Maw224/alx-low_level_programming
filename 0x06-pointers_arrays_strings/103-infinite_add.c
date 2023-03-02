@@ -24,21 +24,21 @@ char *infinite_add(char *n1, char *n2, char *r, int size)
 		len3++;
 		if ((len1 - i - 1) < 0 && (len2 - i - 1) >= 0)
 		{
-			r[size - i - 1] = rem != 0
+			*(r + (size - i - 1)) = rem != 0
 				? ((n2[len2 - i - 1] - '0') + rem) % 10
 				: (n2[len2 - i - 1] - '0') % 10;
 			rem = rem != 0 ? ((n2[len2 - i - 1] - '0') + rem) / 10 : 0;
 		}
 		else if ((len2 - i - 1) < 0 && (len1 - i - 1) >= 0)
 		{
-			r[size - i - 1] = rem != 0
+			*(r + (size - i - 1)) = rem != 0
 				? ((n1[len1 - i - 1] - '0') + rem) % 10
 				: (n1[len1 - i - 1] - '0') % 10;
 			rem = rem != 0 ? ((n1[len1 - i - 1] - '0') + rem) / 10 : 0;
 		}
 		else if ((len1 - i - 1) >= 0 && (len2 - i - 1) >= 0)
 		{
-			r[size - i - 1] = rem != 0
+			*(r + (size - i - 1)) = rem != 0
 				? ((n1[len1 - i - 1] - '0') + (n2[len2 - i - 1] - '0') + rem) % 10
 				: ((n1[len1 - i - 1] - '0') + (n2[len2 - i - 1] - '0')) % 10;
 			rem = rem != 0
