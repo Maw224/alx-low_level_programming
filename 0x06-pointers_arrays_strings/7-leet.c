@@ -27,7 +27,7 @@ char *leet(char *s)
  * Return: Character
  */
 
-char search(char c, char *arr)
+int search(int c, char *arr)
 {
 	int i, j;
 
