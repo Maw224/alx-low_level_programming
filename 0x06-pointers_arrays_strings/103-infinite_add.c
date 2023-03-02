@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * infinte_add - main block
+ * infinite_add - main block
  * @n1: first number
  * @n2: second number
  * @r: buffer to save the result
