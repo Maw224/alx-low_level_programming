@@ -26,7 +26,7 @@ void print_number(int n)
 	hld = n;
 	while (max >= 1)
 	{
-		if (i == 1)
+		if (max == 1)
 			_putchar('0' + (hld % 10));
 		else
 			_putchar('0' + (hld / max));
