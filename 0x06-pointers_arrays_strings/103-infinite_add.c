@@ -27,8 +27,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size)
 			r[size - i - 1] = n1[len1 - i - 1];
 		else if ((len1 - i - 1) >= 0 && (len2 - i - 1) >= 0)
 			r[size - i - 1] = n1[len1 - i - 1] + n2[len2 - i - 1];
-		else
-			r[size - i - 1] = r[size - i - 1];
 	}
 
 	return (r);
