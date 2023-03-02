@@ -45,7 +45,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size)
 				? ((n1[len1 - i - 1] - '0') + (n2[len2 - i - 1] - '0') + rem) / 10
 				: ((n1[len1 - i - 1] - '0') + (n2[len2 - i - 1] - '0')) / 10;
 		}
-		
 	}
 	if (len3 >= size)
 		return (0);
