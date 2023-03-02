@@ -8,25 +8,36 @@
 
 char *leet(char *s)
 {
-	int i, j, k;
+	int i;
 	
 	char encrypt[5][3] = {{'o', 'O', '0'}, {'l', 'L', '1'}, {'e', 'E', '3'},
 		{'a', 'A', '4'}, {'t', 'T', '7'}};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0, k = 0; j < 5 && k < 2; k++)
-		{
-			if (s[i] == encrypt[j][k])
-			{
-				s[i] = encrypt[j][2];
-			}
-			else if (k == 2)
-			{
-				k = 0;
-				j++;
-			}
-		}
+		s[i] = search(s[i], encrypt);	
 	}
 	return (s);
+}
+
+/**
+ * search - secondary block
+ * @c: character
+ * @arr: array
+ * Return: Character
+ */
+
+char search(char c, char *arr)
+{
+	int i, j;
+
+	for(i = 0; i < 5; i++)
+	{
+		for (j = 0; j < 2; j++)
+		{
+			if(c == arr[i][j])
+				return (arr[i][2]);
+		}
+	}
+	return (c);
 }
