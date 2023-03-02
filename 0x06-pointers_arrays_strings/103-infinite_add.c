@@ -18,6 +18,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size)
 	if (size >= len1 || size >= len2)
 		return (0);
 
-	sprintf(r, "%lu", atoi(n1) + atoi(n2));
 	return (r);
 }
