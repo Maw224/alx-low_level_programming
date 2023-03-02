@@ -14,11 +14,23 @@
 char *infinite_add(char *n1, char *n2, char *r, int size)
 {
 	int len1 = strlen(n1), len2 = strlen(n2);
+	int i, j;
 	unsigned long int result;
 
-	if (size >= len1 || size >= len2)
+	if (size <= len1 || size <= len2)
 		return (0);
 
-	result = atoi(n1) + atoi(n2);
+	for (i = 0; i < size; i++)
+	{
+		if ((len1 - i - 1) < 0 && (len2 - i - 1) >= 0)
+			r[size - i - 1] = n2[len2 - i - 1];
+		else if ((len2 - i - 1) < 0 && (len1 - i - 1) >= 0)
+			r[size - i - 1] = n1[len1 - i - 1];
+		else if ((len1 - i - 1) >= 0 && (len2 - i - 1) >= 0)
+			r[size - i - 1] = n1[len1 - i - 1] + n2[len2 - i - 1;
+		else
+			r[size - i - 1] = r[size - i - 1];
+	}
+
 	return (r);
 }
