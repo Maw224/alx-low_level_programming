@@ -36,7 +36,7 @@ int search(int c, char *arr)
 		for (j = 0; j < 2; j++)
 		{
 			if (c == arr[i][j])
-				return (arr[i][2]);
+				 c = arr[i][2];
 		}
 	}
 	return (c);
