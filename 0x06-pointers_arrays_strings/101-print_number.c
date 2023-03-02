@@ -32,7 +32,7 @@ void print_number(int n)
 		else
 			_putchar('0' + (hld / max));
 
-		max /= 10;
 		hld -= (hld / max) * max;
+		max /= 10;
 	}
 }
