@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int i = 0, hld = n, max = 1, count = 0;
+	int i = 0, hld = n, max = 1;
 
 	while (i == 0)
 	{
@@ -18,16 +18,15 @@ void print_number(int n)
 			max *= 10;
 			hld /= 10;
 		}
-		count++;
 	}
 
 	if (n < 0)
 		_putchar('-');
 
 	hld = n;
-	for (i = 0; i < count; i++)
+	while (max >= 1)
 	{
-		if (i == (count - 1))
+		if (i == 1)
 			_putchar('0' + (hld % 10));
 		else
 			_putchar('0' + (hld / max));
