@@ -1,4 +1,5 @@
 #include "main.h"
+int _cmp(char *, char *, int, int);
 
 /**
  * wildcmp - main block
