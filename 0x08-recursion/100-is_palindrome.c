@@ -27,6 +27,8 @@ int _pal(char *s, int i, int j)
 {
 	if (s[i] != s[j])
 		return (0);
-	else
+	else if (i < j)
 		return (_pal(s, ++i, --j));
+	else
+		return (1);
 }
