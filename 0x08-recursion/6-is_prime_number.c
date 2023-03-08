@@ -23,7 +23,7 @@ int _prime(int n, int i)
 {
 	if (n % i == 0)
 		return (0);
-	else if (i < (n / 2))
+	else if (i <= (n / 2))
 		return (_prime(n, ++i));
 	else
 		return (1);
