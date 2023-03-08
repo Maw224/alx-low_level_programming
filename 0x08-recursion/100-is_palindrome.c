@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 int _pal(char *, int, int);
 
 /**
