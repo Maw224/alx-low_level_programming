@@ -34,7 +34,7 @@ int _cmp(char *s1, char *s2, int i, int j)
 			return (1);
 		return (_cmp(s1, s2, ++i, ++j));
 	}
-	else if (s[j - 1] == '*')
+	else if (s2[j - 1] == '*')
 		return (_cmp(s1, s2, ++i, j));
 	else
 		return (0);	
