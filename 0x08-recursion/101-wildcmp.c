@@ -33,6 +33,7 @@ int _cmp(char *s1, char *s2, int i, int j)
 		if (s1[i] == '\0')
 			return (1);
 		return (_cmp(s1, s2, ++i, ++j));
+	}
 	else if (s[j - 1] == '*')
 		return (_cmp(s1, s2, ++i, j));
 	else
