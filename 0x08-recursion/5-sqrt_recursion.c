@@ -14,8 +14,8 @@ int _sqrt_recursion(int n)
 		return (-1);
 	else if (n == 0)
 		return (i);
-	_sqrt_recursion(n - j);
-	j += 2;
 	i += 1;
+	j += 2;
+	_sqrt_recursion(n - j);
 	return (i);
 }
