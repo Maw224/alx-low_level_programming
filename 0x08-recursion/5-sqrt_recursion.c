@@ -1,4 +1,5 @@
 #include "main.h"
+int _sqrt(int, int);
 
 /**
  * _sqrt_recursion - main block
@@ -8,13 +9,24 @@
 
 int _sqrt_recursion(int n)
 {
-	int i = 0, j = 1;
-
-	if (n < 0)
-		return (-1);
-	else if (n == 0)
-		return (i);
-	i += 1;
-	j += 2;
-	_sqrt_recursion(n - j);
+	return (_sqrt(n, 0));
 }
+
+/**
+ * _sqrt - secondary block
+ * @n: number
+ * @i: number
+ * Return: sqrt
+ */
+
+int _sqrt(int n, int i)
+{
+	int sq = i * i;
+
+	if (n == sq)
+		return (i);
+	else if (n > sq)
+		_sqrt(n, ++i);
+	else
+		return (-1);
+}	
