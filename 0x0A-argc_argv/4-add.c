@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 /**
  * main - mainblock
@@ -22,13 +22,12 @@ int main(int argc, char **argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]))
-			total += atoi(rgv[i]);
-		else
+		if (*argv[i] < 48 || *argv[i] > 57)
 		{
 			checked = false;
 			break;
 		}
+		total += atoi(argv[i]);
 	}
 
 	if (!checked)
