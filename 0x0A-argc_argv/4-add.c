@@ -11,7 +11,6 @@
 int main(int argc, char **argv)
 {
 	int total = 0, i;
-	bool checked = true;
 
 	for (i = 1; i < argc; i++)
 	{
