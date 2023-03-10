@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 /**
  * main - mainblock
@@ -18,16 +17,10 @@ int main(int argc, char **argv)
 	{
 		if ((*argv[i] < 48 || *argv[i] > 57) && !(argv[i][0] == '-'))
 		{
-			checked = false;
-			break;
+			printf("Error\n");
+			return (1);
 		}
 		total += atoi(argv[i]);
-	}
-
-	if (!checked)
-	{
-		printf("Error\n");
-		return (1);
 	}
 
 	printf("%d\n", total);
