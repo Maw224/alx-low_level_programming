@@ -14,12 +14,6 @@ int main(int argc, char **argv)
 	int total = 0, i;
 	bool checked = true;
 
-	if (!argc || argc < 1)
-	{
-		printf("%d\n", 0);
-		return (0);
-	}
-
 	for (i = 1; i < argc; i++)
 	{
 		if ((*argv[i] < 48 || *argv[i] > 57) && !(argv[i][0] == '-'))
