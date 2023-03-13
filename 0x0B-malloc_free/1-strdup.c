@@ -18,3 +18,4 @@ char *strdup(char *str)
 	if (!dup)
 		return (NULL);
 	return (dup);
+}
