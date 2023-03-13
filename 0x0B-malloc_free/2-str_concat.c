@@ -14,6 +14,11 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	unsigned int i, j, len = 0;
 
+	if (!s1)
+		s1 = "";
+	if  (!s2)
+		s2 = "";
+
 	for (i = 0; s1[i]; i++)
 		len++;
 	for (i = 0; s2[i]; i++)
