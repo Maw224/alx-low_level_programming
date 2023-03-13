@@ -15,7 +15,7 @@ int **alloc_grid(int w, int h)
 	if (w <= 0 || h <= 0)
 		return (NULL);
 
-	arr = calloc(w * h, sizeof(int));
+	arr = malloc(w * h * sizeof(int));
 
 	if (!arr)
 		return (NULL);
