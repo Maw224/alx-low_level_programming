@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	if (!s3)
 		return (NULL);
 
-	s3 = strcat(s1, s2);
+	s3 = strcat(*s1, *s2);
 
 	return (s3);
 }
