@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _strdup - main block
@@ -11,23 +10,18 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	int len = 0;
+	int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[len] != '\0')
+	for (i = 0; str[i]; i++)
 		len++;
 
-	printf("%d", len);
 	dup = malloc(len * sizeof(char));
 
-	while (*str)
-	{
-		*dup = *str;
-		dup++;
-		str++;
-	}
+	for (i = 0; str[i]; i++)
+		dup[i] = str[i];
 
 	if (!dup)
 		return (NULL);
