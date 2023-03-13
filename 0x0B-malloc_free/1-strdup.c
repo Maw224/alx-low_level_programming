@@ -17,6 +17,8 @@ char *_strdup(char *str)
 
 	while (str[len] != '\0')
 		len++;
+
+	printf("%d", len);
 	dup = realloc(str, len);
 
 	if (!dup)
