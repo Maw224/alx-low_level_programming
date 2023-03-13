@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * strdup - main block
+ * _strdup - main block
  * @str: string
  * Return: pointer to new string
  */
 
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *dup;
 
