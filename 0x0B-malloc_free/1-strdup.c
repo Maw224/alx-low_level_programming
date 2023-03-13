@@ -20,7 +20,14 @@ char *_strdup(char *str)
 		len++;
 
 	printf("%d", len);
-	dup = realloc(str, len);
+	dup = malloc(len * sizeof(char));
+
+	while (*str)
+	{
+		*dup = *str;
+		dup++;
+		str++;
+	}
 
 	if (!dup)
 		return (NULL);
