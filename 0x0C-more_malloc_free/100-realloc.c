@@ -34,7 +34,7 @@ void *_realloc(void *ptr, unsigned int old_s, unsigned int new_s)
 		return (new);
 	}
 
-	new = malloc(new_s);
+	new = malloc(new_s * sizeof(*ptr));
 
 	if (!new)
 	{
