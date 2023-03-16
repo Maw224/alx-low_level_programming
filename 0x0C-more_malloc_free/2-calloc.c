@@ -23,7 +23,7 @@ void *_calloc(unsigned int n, unsigned int s)
 		return (NULL);
 
 	for (i = 0; arr[i]; i++)
-		arr[i] = 0;
+		arr[i] = '\0';
 
 	return (arr);
 }
