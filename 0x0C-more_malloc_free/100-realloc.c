@@ -23,6 +23,15 @@ void *_realloc(void *ptr, unsigned int old_s, unsigned int new_s)
 		return (NULL);
 	}
 
+	if (!ptr)
+	{
+		new = malloc(new_s);
+
+		if (!new)
+			return (NULL);
+		return (new);
+	}
+
 	new = malloc(new_s);
 
 	if (!new)
