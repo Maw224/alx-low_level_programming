@@ -13,7 +13,6 @@
 void *_calloc(unsigned int n, unsigned int s)
 {
 	void *arr;
-	unsigned int i;
 
 	if (n <= 0 || s <= 0)
 		return (NULL);
