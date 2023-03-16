@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _realloc - main block
@@ -28,6 +29,7 @@ void *_realloc(void *ptr, unsigned int old_s, unsigned int new_s)
 		return (NULL);
 
 	memcpy(new, ptr, new_s);
+	free(ptr);
 
 	return (new);
 }
