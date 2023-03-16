@@ -4,6 +4,8 @@
 /**
  * malloc_checked - main bock
  * @n: size
+ *
+ * Return: Pointer to new location
  */
 
 void *malloc_checked(unsigned int n)
