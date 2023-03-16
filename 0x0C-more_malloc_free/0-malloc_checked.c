@@ -1,5 +1,5 @@
 #include "main.h"
-#include <strlib.h>
+#include <stdlib.h>
 
 /**
  * malloc_checked - main bock
