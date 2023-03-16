@@ -17,7 +17,7 @@ void *_calloc(unsigned int n, unsigned int s)
 	if (n <= 0 || s <= 0)
 		return (NULL);
 
-	arr = malloc (n * s);
+	arr = malloc(n * s);
 
 	if (!arr)
 		return (NULL);
