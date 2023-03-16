@@ -14,6 +14,7 @@
 void *_realloc(void *ptr, unsigned int old_s, unsigned int new_s)
 {
 	void *new;
+	char *temp;
 
 	if (new_s == old_s)
 		return (ptr);
@@ -34,7 +35,8 @@ void *_realloc(void *ptr, unsigned int old_s, unsigned int new_s)
 		return (new);
 	}
 
-	new = malloc(new_s * sizeof(*ptr));
+	temp = ptr;
+	new = malloc(new_s * sizeof(*temp));
 
 	if (!new)
 	{
