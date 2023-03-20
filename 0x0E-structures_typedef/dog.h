@@ -23,7 +23,6 @@ struct dog
 /**
  * dog_t - typedef struct dog type
  */
-
 typedef struct dog dog_t;
 
 void init_dog(struct dog, char *, float, char *);
