@@ -2,6 +2,12 @@
 #define DOG_H
 
 /**
+ * File: dog.h
+ * Author: Moawia Ahmed
+ * Desc: header file for dog structure
+ */
+
+/**
  * struct dog - new dog type
  * @name: dog name
  * @age: dog age
@@ -16,7 +22,7 @@ struct dog
 }
 
 /**
- * dog_t - struct dog type
+ * dog_t - typedef struct dog type
  */
 
 typedef struct dog dog_t;
