@@ -12,6 +12,9 @@ int int_index(int *arr, int s, int (*cmp)(int))
 {
 	int i;
 
+	if (!arr || !cmmp)
+		return (-1);
+
 	if (s <= 0)
 		return (-1);
 
