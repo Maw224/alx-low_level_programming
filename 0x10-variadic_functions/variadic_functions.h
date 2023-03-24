@@ -3,6 +3,11 @@
 
 #include <stdarg.h>
 
+/**
+ * struct Print - print structure
+ * @format: format
+ * @f: function
+ */
 typedef struct Print
 {
 	char *format;

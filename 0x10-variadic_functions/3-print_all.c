@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 		len++;
 
 	va_start(args, format);
-	for(i = 0; format[i]; i++)
+	for (i = 0; format[i]; i++)
 	{
 		for (j = 0; j < 4; j++)
 		{
