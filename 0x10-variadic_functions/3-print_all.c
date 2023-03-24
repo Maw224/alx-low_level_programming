@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <Stdarg.h>
+#include <stdarg.h>
 #include <stdio.h>
 
 /**
@@ -17,17 +17,26 @@ void print_all(const char * const format, ...)
 		{"f", print_float}
 	};
 	va_list args;
-	unsigned int i, j;
+	unsigned int i, j, len = 0;
 
+	for (i = 0; format[i]; i++)
+		len++;
+
+	va_start(args, format);
 	for(i = 0; format[i]; i++)
 	{
-		for (j = 0; funcs[j]; j++)
+		for (j = 0; j < 4; j++)
 		{
-			if (format[i] == funcs[j].format)
+			if (format[i] == *(funcs[j].format))
+			{
 				funcs[j].f(args);
+				if (i < (len - 1))
+					printf(", ");
+			}
 		}
 	}
-
+	printf("\n");
+	va_end(args);
 }
 
 /**
@@ -37,9 +46,7 @@ void print_all(const char * const format, ...)
 
 void print_char(va_list args)
 {
-	va_start(args);
-	printf("%c", va_arg(args, char));
-	va_end(args);
+	printf("%c", va_arg(args, int));
 }
 
 /**
@@ -49,9 +56,13 @@ void print_char(va_list args)
 
 void print_string(va_list args)
 {
-        va_start(args);
-        printf("%s", va_arg(args, char *));
-        va_end(args);
+	char *str;
+
+	str = va_arg(args, char *);
+	if (str)
+		printf("%s", str);
+	else
+		printf("(nil)");
 }
 
 /**
@@ -61,9 +72,7 @@ void print_string(va_list args)
 
 void print_int(va_list args)
 {
-        va_start(args);
-        printf("%d", va_arg(args, int));
-        va_end(args);
+	printf("%d", va_arg(args, int));
 }
 
 /**
@@ -73,7 +82,5 @@ void print_int(va_list args)
 
 void print_float(va_list args)
 {
-        va_start(args);
-        printf("%f", va_arg(args, float));
-        va_end(args);
+	printf("%f", va_arg(args, double));
 }

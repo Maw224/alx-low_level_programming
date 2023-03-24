@@ -5,7 +5,7 @@
 
 typedef struct Print
 {
-	format char;
+	char *format;
 	void (*f)(va_list args);
 } printer;
 
