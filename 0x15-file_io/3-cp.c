@@ -26,10 +26,10 @@ int main(int argc, char **argv)
 
 	buf = buf_create(argv[2]);
 	o1 = open(argv[1], O_RDONLY);
-	o2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(o1, buf, 1024);
+	o2 = open(argv[2], O_APPEND | O_WRONLY | O_TRUNC, 0664);
 
-	while (r > 0)
+	for (; r > 0;)
 	{
 		if (o1 == -1 || r == -1)
 		{
