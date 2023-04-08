@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int close_file(int);
+void close_file(int);
 char *buf_create(char *);
 
 /**
@@ -25,9 +25,8 @@ int main(int argc, char **argv)
 	}
 
 	buf = buf_create(argv[2]);
-
 	o1 = open(argv[1], O_RDONLY);
-	o2 = open(argv[2], O_CREAT | O_WRONLY, 0664);
+	o2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(o1, buf, 1024);
 
 	while (r > 0)
@@ -65,17 +64,17 @@ int main(int argc, char **argv)
  * Return: result
  */
 
-int close_file(int f)
+void close_file(int f)
 {
-	int c = close(f);
+	int c;
 
+	c = close(f);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO,
 				"Error: Can't close fd %d\n", c);
 		exit(100);
 	}
-	return (c);
 }
 
 /**
