@@ -3,7 +3,7 @@
 /**
  * read_textfile - main block
  * @filename: file name
- * letters: num of letters
+ * @letters: num of letters
  * Return: num of letters can read and write
  */
 
