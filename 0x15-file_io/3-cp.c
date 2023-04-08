@@ -29,8 +29,7 @@ int main(int argc, char **argv)
 	r = read(o1, buf, 1024);
 	o2 = open(argv[2], O_APPEND | O_WRONLY | O_TRUNC, 0664);
 
-	for (; r > 0;)
-	{
+	do {
 		if (o1 == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -50,7 +49,7 @@ int main(int argc, char **argv)
 
 		r = read(o1, buf, 1024);
 		o2 = open(argv[2], O_WRONLY | O_APPEND);
-	}
+	} while (r > 0);
 	free(buf);
 	close_file(o1);
 	close_file(o2);
